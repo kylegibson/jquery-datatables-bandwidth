@@ -1,0 +1,173 @@
+.byte {
+color:#000;
+}
+
+.dataTables_empty {
+text-align:center;
+}
+
+.dataTables_filter {
+float:right;
+text-align:right;
+width:15em;
+}
+
+.dataTables_filter input {
+width: 5em;
+}
+
+.dataTables_info {
+float:left;
+padding-top:3px;
+width:50%;
+}
+
+.dataTables_length {
+float:left;
+width:12em;
+}
+
+.dataTables_paginate {
+float:right;
+text-align:right;
+width:auto;
+}
+
+.dataTables_paginate .ui-button {
+margin-right:-.1em!important;
+}
+
+.dataTables_processing {
+border:1px solid #DDD;
+color:#999;
+font-size:11px;
+left:50%;
+margin-left:-125px;
+padding:2px 0;
+position:absolute;
+text-align:center;
+top:0;
+width:250px;
+}
+
+.dataTables_scroll,.clear {
+clear:both;
+}
+
+.fg-toolbar select, .fg-toolbar input {
+margin-left: 0.2em;
+}
+
+.fg-toolbar div {
+  margin-right: 0.2em;
+}
+
+.fg-toolbar .buttons {
+float:left;
+}
+
+.fg-toolbar .units {
+float:left;
+}
+
+.fg-toolbar .period {
+float:left;
+}
+
+.fg-toolbar .metric {
+float:left;
+}
+
+.fg-toolbar .date_range {
+float:left;
+}
+
+.fg-toolbar .date_range input {
+width:6em;
+margin-right:1em;
+}
+
+.dataTables_wrapper {
+clear:both;
+font-size:.8em;
+min-height:302px;
+position:relative;
+}
+
+.gigabyte {
+color:red;
+}
+
+.kilobyte {
+color:blue;
+}
+
+.megabyte {
+color:green;
+}
+
+.no-data {
+color:silver;
+}
+
+.paging_full_numbers {
+width:350px!important;
+}
+
+.paging_full_numbers .ui-button {
+cursor:pointer;
+margin:0;
+padding:2px 6px;
+}
+
+.text_left {
+text-align:left;
+}
+
+.text_right {
+text-align:right;
+}
+
+div.dataTables_wrapper .ui-widget-header {
+font-weight:400;
+}
+
+td,th,.dataTables_wrapper .ui-toolbar {
+padding:.5em;
+}
+
+td.system {
+border-right:1px solid silver;
+}
+
+th {
+cursor:pointer;
+}
+
+th div.DataTables_sort_wrapper {
+padding-right:20px;
+position:relative;
+}
+
+th div.DataTables_sort_wrapper span {
+margin-top:-8px;
+position:absolute;
+right:0;
+top:50%;
+}
+
+tr.even {
+background-color:#FFF;
+}
+
+tr.even td.sorting_1 {
+background-color:#EAEBFF;
+}
+
+tr.odd {
+background-color:#E2E4FF;
+}
+
+tr.odd td.sorting_1 {
+background-color:#D3D6FF;
+}
