@@ -1,6 +1,6 @@
 function bandwidth(div) {
   // Requires datejs, datetables, jquery
-  var xfer_ajax_datasource = "/bandwidth.php";
+  var xfer_ajax_datasource = "bandwidth.php";
   var json_cache = {};
   var container = $("<div>");
   var table = $('<table id="bandwidth" cellpadding="0" cellspacing="0" border="0">');
@@ -92,7 +92,7 @@ function bandwidth(div) {
     };
     var local_opts = {
       complete: complete,
-      url: "/"+period+"-"+metric+".json",
+      url: period+"-"+metric+".json",
     };
     $.ajax(window.location.hostname.match(/localhost/) ? local_opts : remote_opts);
   }
@@ -121,7 +121,9 @@ function bandwidth(div) {
       }
       if(div > 0 && n > 0) {
         text = (n/div).toFixed(div == 1 ? 0 : 2);
-        $(td).text(text + u);
+        if($(td).text() != "0") {
+          $(td).text(text + u);
+        }
       }
     });
     return nRow;
@@ -142,7 +144,7 @@ function bandwidth(div) {
       "sPaginationType": "full_numbers",
       "iDisplayLength": 10,
       "aLengthMenu": [[10, 20, 40, 60, -1], [10, 20, 40, 60, "All"]],
-      // "fnRowCallback" : fnRowCallback,
+      "fnRowCallback" : fnRowCallback,
       "aoColumnDefs" : [{ 
           "aTargets"  : [0],
           "sClass"    : "text_left system",
